@@ -1,0 +1,34 @@
+.pAbout{
+    margin: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.h2About{
+    margin: 1rem;
+}
+
+.skateImg{
+    width: 25rem;
+    border-radius: 2rem;
+    box-shadow: .1rem .1rem .9rem .2rem;
+}
+
+.mainAbout{
+    margin: 2.5rem 0rem;
+    background-image: url("../../images/fondo5.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0rem -0.8rem; 
+}
+
+
+@media (max-width: 500px) {
+    .divAbout{
+        flex-direction: column;
+    }
+    .mainAbout{
+        background-size: auto;
+        background-position: 0rem -0.8rem; 
+        background-size: 100rem;
+    }
+}

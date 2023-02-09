@@ -1,0 +1,140 @@
+
+main{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+p{
+    font-size: 1.1rem;
+}
+#main{
+    text-align: center;
+    padding-bottom: 1rem;
+    background-image: url("../../images/fondo4.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-weight: bold;
+}
+
+.principalContainer{
+    margin-bottom: 4.5rem;
+    padding: 1rem;
+    align-items: center;
+}
+button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    padding: .5rem 1.3rem;
+    border: 0rem;
+    background-color: #004040;
+}
+.caja11{
+    text-align: left;
+}
+.flechaImg{
+    width: 5rem;
+    transform: rotateZ(-1.6rad);
+}
+
+.myImg{
+    width: 58%;
+}
+
+.flechaImg{
+    opacity: 0%;
+    animation: animationArrow infinite 3s;
+}
+
+.iconoL{
+    width: 20%;
+}
+.listaIcons{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.arrowText{
+    opacity: 0%;
+    position: relative;
+    left: 0px;
+    color: white;
+    transition: opacity .4s;
+    transition: left 1s;
+}
+
+.btnContact:hover > .arrowText{
+    opacity: 100%;
+    left: 10px;
+}
+@keyframes animationArrow {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@media (min-width: 600px){
+    .titleHome{
+        border-right: .15em solid black;
+        animation: blink 1s steps(1) infinite;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 15s steps(37) 5s 1 normal both, blink 1s steps(1) infinite;
+        animation-iteration-count: infinite;
+    }
+    @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    
+    @keyframes typing {
+        0% {
+          width: 0;
+        }
+        25% {
+          width: 79%;
+        }
+        50% {
+            width: 0;
+        }
+        100% {
+            width: 80%;
+        }
+      }  
+}
+@media (max-width: 500px) {
+    .principalContainer{
+        flex-direction: column-reverse;
+    }
+    .divWelcome{
+        flex-direction: column-reverse;
+    }
+    .caja11{
+        text-align: center;
+    }
+    .listaIcons4{
+        opacity: 0%;
+        position: absolute;
+        right: 1000px;
+    }
+    .myImg{
+        width: 70%;
+        margin: 1rem;
+    }
+    #main{
+        background-size: contain;
+    }
+}
+
+#contactoHome{
+    color: white;
+}
+#contactoHome:focus{
+    color: white;
+}
+

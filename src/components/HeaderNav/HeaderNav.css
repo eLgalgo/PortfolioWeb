@@ -1,0 +1,138 @@
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+li{
+    margin: .5rem;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration:unset;
+    color: #353535;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #b16c05;
+}
+
+header{
+    background-color: transparent;
+    top: 0;
+    position:sticky;
+}
+
+.letraNav{
+    font-weight: bold;
+    color: #C69731;
+    font-size: 1.5rem;
+}
+
+button{
+    font-size: 1.01rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.btnCV{
+    font-size: 1.01rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.btnCV:hover{
+    color: white;
+}
+.btnButton:hover{
+    background-color: #C69731;
+}
+
+.letraNav2{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.letraNav2:hover {
+    background-size: 100% 2px;
+}
+
+.letraNav2:focus{
+    background-size: 100% 2px;
+}
+
+.burgerIcon{
+    position: absolute;
+    opacity: 0;
+}
+
+.navbar-toggler{
+    border: 0;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+@media (max-width: 500px) {
+    .letraNav{
+        font-size: 2rem;
+    }
+    header{
+        background-color: white;
+    }
+    .burgerIcon{
+        position:initial;
+        opacity: 100%;
+    }
+    .listaHeader{
+        position: fixed;
+        opacity: 0;
+        top: -20rem;
+        left: -400rem;
+        flex-direction: column;
+    }
+    .listaHeader.active{
+        opacity: 100%;
+        top: 3rem;
+        left: -4.05rem;
+        transition: opacity .4s;
+        background-color: white;
+        width: 120%;
+    }
+    li{
+        margin:0;
+    }
+    .listaHeader li{
+        margin: 0.4rem;
+    }
+}
+
+.bar{
+    display: block;
+    background-color: #C69731;
+    width: 34px;
+    height: 4.5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    background-color: #004040;
+}
+
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: #004040;
+}

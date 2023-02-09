@@ -1,0 +1,88 @@
+.imgWork{
+    width: 100%;
+}
+
+.imgWork:hover{
+    transform:  scale(1.05);
+    transition: transform 4s
+}
+
+aside{
+    margin: 2.5rem 0rem;
+    flex-wrap: wrap;
+}
+
+#myWork{
+    background-image: url("../../images/fondo5.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: .1.5rem
+}
+
+h2{
+    font-weight: bold;
+}
+
+.arrow{
+    width: 70%;
+}
+
+
+.arrow1{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+.btnW{
+    margin: .5rem;
+}
+
+.btnY{
+    background-color: #C69731;
+}
+
+.h2Work{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem;
+}
+
+.spanWorkL{
+    opacity: 0%;
+    position: relative;
+    left: 0px;
+    transition: opacity .4s;
+    transition: left .4s;
+}
+
+.btnWL:hover > .spanWorkL{
+    opacity: 100%;
+    left: 10px;
+}
+
+.spanWorkR{
+    opacity: 0%;
+    position: relative;
+    right: 0px;
+    transition: opacity .4s;
+    transition: right .4s;
+}
+
+.btnWR:hover > .spanWorkR{
+    opacity: 100%;
+    right: 10px;
+}
+
+.proyect{
+    margin: 2.5rem 0rem;
+}
+
+@media (max-width: 500px) {
+    .proyect{
+        padding: 0;
+        flex-direction: column;
+    }
+    .proyect2{
+        flex-direction: column;
+    }
+}

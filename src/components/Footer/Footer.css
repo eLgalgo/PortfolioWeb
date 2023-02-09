@@ -1,0 +1,34 @@
+footer{
+    text-align: center;
+    background-color: #004040;
+}
+
+.h3Footer{
+    color: white;
+    margin: 1rem;
+}
+.pFooter{
+    color: white;
+}
+
+.listaIcons2{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+.linkFooter{
+    color: white;
+}
+
+.linkFooter:hover{
+    color: white;
+}
+
+.emailDivFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

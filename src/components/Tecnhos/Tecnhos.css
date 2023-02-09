@@ -1,0 +1,19 @@
+
+.pTecn{
+    text-align: center;
+    font-weight: bold;
+    opacity: 0%;
+    transition: opacity .3s;
+    pointer-events:none;
+}
+.liTecn img:hover ~ .pTecn{
+    opacity: 100%;
+}
+
+.liTecn{
+    text-align: center;
+}
+
+.listTecn{
+    flex-wrap:wrap;
+}
